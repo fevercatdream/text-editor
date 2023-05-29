@@ -18,12 +18,32 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      new HtmlWebpackPlugin({template: 'index.html'}), 
+      new WebpackPwaManifest({
+        name: 'Text Editor',
+        short_name: 'MyTE',
+        description: 'Progressive Web App for a text editor',
+        background_color: '#ffffff',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+          },
+        ],
+        fingerprints: false,
+        inject: false,
+      }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+      }),
     ],
 
     module: {
       rules: [
-        
+        {
+          test: /\.css$/i,
+          use: ["css-loader"], 
+        }   
       ],
     },
   };
