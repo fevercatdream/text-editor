@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -11,16 +12,17 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
     },
     output: {
+      publicPath: "",
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new HtmlWebpackPlugin({template: 'index.html'}), 
       new WebpackPwaManifest({
-        name: 'Text Editor',
+        name: 'J.A.T.E.',
         short_name: 'MyTE',
         description: 'Progressive Web App for a text editor',
         background_color: '#ffffff',
@@ -35,6 +37,11 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: "./src/css/style.css", to: "." },
+        ],
       }),
     ],
 

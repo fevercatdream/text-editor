@@ -17,12 +17,14 @@
       <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
       </link>
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="manifest" href="./manifest.json" />
       <%= htmlWebpackPlugin.tags.headTags %>
   </head>
   <body>
     <nav id="navbar">
       <div class="nav-btn">
-        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
+        <a class="btn btn-sm btn-dark hidden" id="buttonInstall" role="button">Install!</a>
       </div>
      <h1> Just Another Text Editor</h1>
      

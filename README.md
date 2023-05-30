@@ -2,6 +2,7 @@
 
 ## Description
 
+Build a simple text editor that runs in the browser or installed as a Progressive Web App.
 
 
 ### User Story
@@ -77,6 +78,8 @@ This application uses the following:
 
 [babel-loader](https://www.npmjs.com/package/babel-loader) babel module loader for webpack
 
+[copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin) copies individual files or entire directories, which already exist, to the build directory
+
 [css-loader](https://www.npmjs.com/package/css-loader) css loader module for webpack
 
 [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin) simplifies creation of HTML files to serve your webpack bundles
@@ -102,6 +105,7 @@ This application uses the following:
 
 ## Usage
 
+A simple text editor that runs in the browser or installed as a Progressive Web App.
 
 
 ### Deployed Site
@@ -126,6 +130,14 @@ shields.io: https://shields.io/
 workbox-webpack-plugin: https://developer.chrome.com/docs/workbox/reference/workbox-webpack-plugin/
 
 Webpack docs: https://webpack.js.org/
+
+CopyWebpackPlugin: https://webpack.js.org/plugins/copy-webpack-plugin/
+
+autoprefix problem with webpack manifest plugin: https://stackoverflow.com/questions/65245185/new-to-webpackautoprefix-problem-with-webpack-manifest-plugin
+
+html-webpack-plugin: https://github.com/jantimon/html-webpack-plugin
+
+cautious-meme for starter code: https://github.com/coding-boot-camp/cautious-meme
 
 
 ## License

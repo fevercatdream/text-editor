@@ -32,6 +32,9 @@ h1 {
   font-weight: 550;
   letter-spacing: 0.9px;
 }
+.hidden {
+  display: none !important;
+}
 
 .navbar-brand img {
   padding-top: 10px;
