@@ -58,6 +58,8 @@ Use the following command to install the necessary packages
 
 ```
 npm install (package_name@version)
+
+npm run build
 ```
 
 This application uses the following:
@@ -66,7 +68,13 @@ This application uses the following:
 
 [if-env](https://www.npmjs.com/package/if-env) simplify npm scripts with if-env
 
+[code-mirror-themes](https://www.npmjs.com/package/code-mirror-themes) a large collection of Code Mirror themes for your coding pleasure
+
+[idb](https://www.npmjs.com/package/idb) a small wrapper that makes IndexedDB usable
+
 [concurrently](https://www.npmjs.com/package/concurrently) run multiple commands concurrently
+
+[nodemon](https://www.npmjs.com/package/nodemon) a simple monitor script for use during development of a Node.js app
 
 [@babel/core](https://www.npmjs.com/package/@babel/core) Babel compiler core
 
@@ -97,10 +105,6 @@ This application uses the following:
 [webpack-pwa-manifest](https://www.npmjs.com/package/webpack-pwa-manifest) webpack-pwa-manifest is a webpack plugin that generates a 'manifest.json' for your Progressive Web Application
 
 [workbox-webpack-plugin](https://www.npmjs.com/package/workbox-webpack-plugin) a plugin for your Webpack build process, helping you generate a manifest of local files that workbox-sw should pre-cache
-
-[code-mirror-themes](https://www.npmjs.com/package/code-mirror-themes) a large collection of Code Mirror themes for your coding pleasure
-
-[idb](https://www.npmjs.com/package/idb) a small wrapper that makes IndexedDB usable
 
 
 ## Usage
