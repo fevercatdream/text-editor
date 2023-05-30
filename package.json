@@ -9,7 +9,8 @@
     "server": "",
     "build": "",
     "install": "",
-    "client": ""
+    "client": "",
+    "heroku-prebuild": "npm install --dev"
   },
   "keywords": [],
   "author": "",
